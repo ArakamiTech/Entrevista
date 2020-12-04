@@ -1,0 +1,15 @@
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\security\MyApplicationSecurityContext.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\interfaces\CrudClientesEntityFacadeLocal.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\security\RestSecurityFilter.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\services\ClientesResource.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\interfaces\AbstractFacade.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\security\User.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\entities\CrudClientesEntity.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\util\Util.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\security\Secured.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\entities\CrudTarjetasCreditoEntity.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\services\TarjetasResource.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\impl\CrudClientesEntityFacade.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\services\ApplicationConfig.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\impl\CrudTarjetasCreditoEntityFacade.java
+D:\Documentos\Netbeans\Crud\src\main\java\com\proyecto\crud\interfaces\CrudTarjetasCreditoEntityFacadeLocal.java

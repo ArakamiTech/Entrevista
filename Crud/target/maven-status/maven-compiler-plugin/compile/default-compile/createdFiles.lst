@@ -1,0 +1,17 @@
+com\proyecto\crud\entities\CrudClientesEntity.class
+com\proyecto\crud\interfaces\AbstractFacade.class
+com\proyecto\crud\interfaces\CrudTarjetasCreditoEntityFacadeLocal.class
+com\proyecto\crud\interfaces\CrudClientesEntityFacadeLocal.class
+com\proyecto\crud\security\Secured.class
+com\proyecto\crud\impl\CrudClientesEntityFacade.class
+com\proyecto\crud\entities\CrudClientesEntity_.class
+com\proyecto\crud\security\RestSecurityFilter.class
+com\proyecto\crud\services\ApplicationConfig.class
+com\proyecto\crud\entities\CrudTarjetasCreditoEntity_.class
+com\proyecto\crud\services\ClientesResource.class
+com\proyecto\crud\security\MyApplicationSecurityContext.class
+com\proyecto\crud\services\TarjetasResource.class
+com\proyecto\crud\security\User.class
+com\proyecto\crud\util\Util.class
+com\proyecto\crud\entities\CrudTarjetasCreditoEntity.class
+com\proyecto\crud\impl\CrudTarjetasCreditoEntityFacade.class
