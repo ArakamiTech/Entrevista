@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "5bf580c6-52b6-4f8e-b17a-91e8d3b7d48f",
+		"name": "CRUDE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6IlVTVUFSSU8iLCJzdWIiOiJ0ZXN0IiwiaXNzIjoiaHR0cDovL3d3dy5pbmZvaW50ZXJuZXQuZXMiLCJpYXQiOjE2MDY4NzkyMTIsImV4cCI6MTYwNjg4MjgxMn0.xtAw5nLz6z5RwOqY1jFCz4UJ1Isj_jifRWrsw3uo_qyrenG4AZ5YqfQDf6mvkCl1dh717FDaZLA1Z-S2wcNK7w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7001/Crud/webresources/clientes/login?user=test&password=test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"Crud",
+						"webresources",
+						"clientes",
+						"login"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "test"
+						},
+						{
+							"key": "password",
+							"value": "test"
+						}
+					]
+				},
+				"description": "Token"
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Cliente Por Identificacion",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6IlVTVUFSSU8iLCJzdWIiOiJ0ZXN0IiwiaXNzIjoiaHR0cDovL3d3dy5pbmZvaW50ZXJuZXQuZXMiLCJpYXQiOjE2MDcwMzc4MzMsImV4cCI6MTYwNzA0MTQzM30.2idbNlmVlGPeSZ_7cnoQm_t8gPP1sWZqybFCw7v_THNoM7hlFRov2FYH_RCG1DM4gUKI58aOGleqe5nf798A5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "secContext",
+						"value": "xp9xSS6wK2aiaw4HtQQUA6ex1PZu3SJ3bxXe2cFLKBd77osQWGwTSnEpWa4MM475ZWEvbjuYKGEO8OiS9PgrXQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7001/Crud/webresources/clientes/find?identificacion=123456789",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"Crud",
+						"webresources",
+						"clientes",
+						"find"
+					],
+					"query": [
+						{
+							"key": "identificacion",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crea Cliente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6IlVTVUFSSU8iLCJzdWIiOiJ0ZXN0IiwiaXNzIjoiaHR0cDovL3d3dy5pbmZvaW50ZXJuZXQuZXMiLCJpYXQiOjE2MDcwMzg5ODQsImV4cCI6MTYwNzA0MjU4NH0.kw5WSXSMsjjKYz9X5oIgndjjKi2ObSEZTZhU_6ubNsMQ52BPYZC7Pb-75ekcQ4XMcg3c8mQWIIJw4d1_UwtEAQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numIdCliente\": 2,\r\n    \"strIdentificacion\": \"123456780\",\r\n    \"strNombre\": \"Pepe\",\r\n    \"strNumeroTelefono\": \"311\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7001/Crud/webresources/clientes/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"Crud",
+						"webresources",
+						"clientes",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edita Cliente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6IlVTVUFSSU8iLCJzdWIiOiJ0ZXN0IiwiaXNzIjoiaHR0cDovL3d3dy5pbmZvaW50ZXJuZXQuZXMiLCJpYXQiOjE2MDcwMzc4MzMsImV4cCI6MTYwNzA0MTQzM30.2idbNlmVlGPeSZ_7cnoQm_t8gPP1sWZqybFCw7v_THNoM7hlFRov2FYH_RCG1DM4gUKI58aOGleqe5nf798A5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numIdCliente\": 1,\r\n    \"strIdentificacion\": \"123456789\",\r\n    \"strNombre\": \"CCCC\",\r\n    \"strNumeroTelefono\": \"311\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7001/Crud/webresources/clientes/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"Crud",
+						"webresources",
+						"clientes",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Tarjeta Por Numero",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6IlVTVUFSSU8iLCJzdWIiOiJ0ZXN0IiwiaXNzIjoiaHR0cDovL3d3dy5pbmZvaW50ZXJuZXQuZXMiLCJpYXQiOjE2MDY5NzEzODYsImV4cCI6MTYwNjk3NDk4Nn0.Y428xWueBchpmnjpfIWPqrDXRPABzM4A_jbxXxmLJvjod0TOw57J2Fq0MPw3sJ24D-aXD51ctJtz0-DHOr3omA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7001/Crud/webresources/tarjetas/find?numeroTarjeta=5431956871808425",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"Crud",
+						"webresources",
+						"tarjetas",
+						"find"
+					],
+					"query": [
+						{
+							"key": "numeroTarjeta",
+							"value": "5431956871808425"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Tarjeta Por Identificacion",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6IlVTVUFSSU8iLCJzdWIiOiJ0ZXN0IiwiaXNzIjoiaHR0cDovL3d3dy5pbmZvaW50ZXJuZXQuZXMiLCJpYXQiOjE2MDcwMzc4MzMsImV4cCI6MTYwNzA0MTQzM30.2idbNlmVlGPeSZ_7cnoQm_t8gPP1sWZqybFCw7v_THNoM7hlFRov2FYH_RCG1DM4gUKI58aOGleqe5nf798A5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7001/Crud/webresources/tarjetas/findByIdentificationClient?identificacion=123456789",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"Crud",
+						"webresources",
+						"tarjetas",
+						"findByIdentificationClient"
+					],
+					"query": [
+						{
+							"key": "identificacion",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crea Tarjeta y Asigna a Cliente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6IlVTVUFSSU8iLCJzdWIiOiJ0ZXN0IiwiaXNzIjoiaHR0cDovL3d3dy5pbmZvaW50ZXJuZXQuZXMiLCJpYXQiOjE2MDcwNDMzMjgsImV4cCI6MTYwNzA0NjkyOH0.ooclutizMmujZeS_ke7pUgfPnYYS2gPwt3ES1lYZM9jbpm7fArR7T5NapDC4yLaux6BPkut7Nzo6PxMbdVWhCw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numIdTarjeta\": 2,\r\n    \"strTipoTarjeta\": \"MASTERCARD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7001/Crud/webresources/tarjetas/create?identificacion=123456789",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"Crud",
+						"webresources",
+						"tarjetas",
+						"create"
+					],
+					"query": [
+						{
+							"key": "identificacion",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edita Tarjeta y Cliente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6IlVTVUFSSU8iLCJzdWIiOiJ0ZXN0IiwiaXNzIjoiaHR0cDovL3d3dy5pbmZvaW50ZXJuZXQuZXMiLCJpYXQiOjE2MDcwNDUwMDIsImV4cCI6MTYwNzA0ODYwMn0.abG-0yz8FlynewqzpWe4VBVpl7B4ggEHN0LOx0zTu8203r-q3u4ScLaVUA9j7KDzMlkJWodFnwERHVr9oEBd2Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numIdCliente\": {\r\n        \"numIdCliente\": 1,\r\n        \"strIdentificacion\": \"123456789\",\r\n        \"strNombre\": \"Pedro\",\r\n        \"strNumeroTelefono\": \"311\"\r\n    },\r\n    \"strNumeroTarjeta\": \"1539235837216760\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7001/Crud/webresources/tarjetas/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"Crud",
+						"webresources",
+						"tarjetas",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
